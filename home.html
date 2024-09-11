@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/x-icon" href="Images/logo.png">
+    <title>CALCULATOR</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="style.css">
+   
+</head>
+<body class="body1"   background= "C:\Users\kondu\OneDrive\Desktop\Internship\Minor projects\Calculator\Images\bg.png">
+   <h1 class="heading">CALCULATOR</h1>
+       
+   
+  <div class="body2" >
+    <!--Taking the input tag as readonly, because i dont want to take any input form that tag.
+        It is only to display the values we enter to calculate.  -->
+     <div id="calculator">
+          <input id="display" readonly >
+         <div id="keys">
+             <!-- Takng buttons for the numbers and operators  -->
+             <button onclick="clearDisplay()"  class="operator delete">AC</button>
+             <!-- onclick attribute is taken to create a js function to pass an argument '+' when the button is clicked -->
+             <button onclick="appendToDisplay('') " class="operator delete" >DEL</button>
+             <button onclick="appendToDisplay('.')" class="operator">.</button>
+             <button onclick="appendToDisplay('/')" class="operator">/</button>
+             <button onclick="appendToDisplay('7')">7</button>
+             <button onclick="appendToDisplay('8')">8</button>
+             <button onclick="appendToDisplay('9')">9</button>
+             <button onclick="appendToDisplay('*')"  class="operator">*</button>
+             <button onclick="appendToDisplay('4')">4</button>
+             <button onclick="appendToDisplay('5')">5</button>
+             <button onclick="appendToDisplay('6')">6</button>
+             <button onclick="appendToDisplay('-')"  class="operator">-</button>
+             <button onclick="appendToDisplay('1')">1</button>
+             <button onclick="appendToDisplay('2')">2</button>
+             <button onclick="appendToDisplay('3')">3</button>
+             <button onclick="appendToDisplay('+')"  class="operator">+</button>
+             <button onclick="appendToDisplay('0')">0</button>
+             <button onclick="appendToDisplay('00')">00</button>
+             <button onclick="calculate()"  class=" ">=</button>
+             <button onclick="appendToDisplay('%')"  class="operator delete">%</button>
+        </div>
+    </div>
+  </div>
+
+
+    <script src="Javascript.js"></script>
+
+    
+
+
+</body>
+</html>

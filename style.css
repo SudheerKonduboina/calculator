@@ -1,0 +1,65 @@
+button{
+    width:80px;
+    height :80px;
+    border-radius:50px;    /* for circle shape */
+    border:none;   /*  to remove the border */
+    background-color:hsl(0, 0%, 30%);
+    color:white;
+    font-size: 3rem;
+    font-weight: bold;
+    cursor:pointer;   /* to change the cursor as pointer in the calculator */  
+}
+.delete{
+    font-size: 2rem;   
+}
+#keys{
+     display:grid; /*  To display elements side by side */
+     grid-template-columns:repeat(4,1fr);  /* 1 fr is a fractional space for every button */
+     padding:23px;
+     gap: 8px;
+     
+}
+#display{
+    width: 100%;
+    padding:20px;
+    background-color: hsl(0, 0%, 20%);
+    font-size: 4rem;
+    text-align: left;
+    color:white;
+    border:none;
+
+}
+.body2{
+     align-items: center; 
+    justify-content: center; 
+    display:flex;
+    margin: 0;
+    height:80vh;
+    
+}
+#calculator{
+    font-family: Arial,  sans-serif;
+    background-color:hsl(0, 0%, 15%) ;
+    border-radius: 15px;
+    overflow:hidden;
+    max-width: 400px;
+}
+button:hover{
+    background-color: hsl(0, 0%, 40%);   /*  while cursor moving in specific button color changes */
+}
+button:active{
+    background-color: hsl(0, 0%, 50%);  /* while clicking the button */
+}
+.operator{
+    background-color:  hsl(35, 100%, 55%);
+}
+.operator:active{
+    background-color: hsl(35, 100%, 75%);
+}
+.operator:hover{
+    background-color: hsl(35, 100%, 65%);  
+}
+.heading{
+    color: azure;
+    font-size: 40px;
+}
